@@ -40,6 +40,8 @@ class ViewController: UIViewController {
         
         if questionNumber < quiz.count - 1 {
             questionNumber += 1
+        } else {
+            questionNumber = 0
         }
         updateUI()
     }
