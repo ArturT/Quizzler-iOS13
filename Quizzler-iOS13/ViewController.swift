@@ -20,15 +20,21 @@ class ViewController: UIViewController {
         "5 - 3 > 1",
         "3 + 8 < 10",
     ]
+    var questionNumber = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        questionLabel.text = quiz[0]
+        updateUI()
     }
 
     @IBAction func answerButtonPressed(_ sender: UIButton) {
+        questionNumber += 1
+        updateUI()
     }
     
+    func updateUI() {
+        questionLabel.text = quiz[questionNumber]
+    }
 }
 
