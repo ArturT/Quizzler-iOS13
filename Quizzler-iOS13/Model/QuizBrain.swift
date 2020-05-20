@@ -45,4 +45,8 @@ struct QuizBrain {
             questionNumber = 0
         }
     }
+    
+    func getScore() -> String {
+        return "TODO"
+    }
 }
